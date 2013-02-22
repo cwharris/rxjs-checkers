@@ -1,0 +1,118 @@
+.col-0 {
+  left: 0px;
+}
+.col-1 {
+  left: 80px;
+}
+.col-2 {
+  left: 160px;
+}
+.col-3 {
+  left: 240px;
+}
+.col-4 {
+  left: 320px;
+}
+.col-5 {
+  left: 400px;
+}
+.col-6 {
+  left: 480px;
+}
+.col-7 {
+  left: 560px;
+}
+.row-0 {
+  top: 0px;
+}
+.row-1 {
+  top: 80px;
+}
+.row-2 {
+  top: 160px;
+}
+.row-3 {
+  top: 240px;
+}
+.row-4 {
+  top: 320px;
+}
+.row-5 {
+  top: 400px;
+}
+.row-6 {
+  top: 480px;
+}
+.row-7 {
+  top: 560px;
+}
+.grid {
+  position: relative;
+  width: 640px;
+  height: 640px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  border: 5px solid #eee;
+}
+.grid-unit {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  display: block;
+  float: left;
+  -webkit-transition: background 0.35s, box-shadow 0.35s;
+  -moz-transition: background 0.35s, box-shadow 0.35s;
+  -o-transition: background 0.35s, box-shadow 0.35s;
+  -ms-transition: background 0.35s, box-shadow 0.35s;
+  transition: background 0.35s, box-shadow 0.35s;
+}
+.grid-unit.even,
+.grid-unit.odd {
+  background: #ddd;
+  -webkit-box-shadow: 0px 0px 15px #fff inset;
+  box-shadow: 0px 0px 15px #fff inset;
+}
+.grid-unit.even.odd {
+  -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.1) inset;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1) inset;
+  background: #ccc;
+}
+.grid-unit:hover.even.odd,
+.grid-unit:hover.even,
+.grid-unit:hover.odd {
+  background: #ffa500;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,0.15) inset;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15) inset;
+}
+.piece {
+  -webkit-transition: left 1s, top 1s;
+  -moz-transition: left 1s, top 1s;
+  -o-transition: left 1s, top 1s;
+  -ms-transition: left 1s, top 1s;
+  transition: left 1s, top 1s;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #eee;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,0.35);
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.35);
+  margin: 10px;
+}
+.piece.team-black {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #555), color-stop(1, #333));
+  background: -webkit-linear-gradient(top, #555 0%, #333 100%);
+  background: -moz-linear-gradient(top, #555 0%, #333 100%);
+  background: -o-linear-gradient(top, #555 0%, #333 100%);
+  background: -ms-linear-gradient(top, #555 0%, #333 100%);
+  background: linear-gradient(top, #555 0%, #333 100%);
+}
+.piece.team-red {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e00), color-stop(1, #c00));
+  background: -webkit-linear-gradient(top, #e00 0%, #c00 100%);
+  background: -moz-linear-gradient(top, #e00 0%, #c00 100%);
+  background: -o-linear-gradient(top, #e00 0%, #c00 100%);
+  background: -ms-linear-gradient(top, #e00 0%, #c00 100%);
+  background: linear-gradient(top, #e00 0%, #c00 100%);
+}
